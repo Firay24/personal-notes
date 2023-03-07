@@ -1,0 +1,284 @@
+* {
+    font-family: 'Poppins';
+}
+
+/* SearchBar -Start- */
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar__input {
+    border-style: none;
+    padding: 10px 0 10px 35px;
+    width: 330px;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    font-size: small;
+}
+
+::placeholder {
+    color: #DED7D7;
+    font-size: small;
+}
+
+input:focus {
+    outline: none;
+    border: 1.5px solid rgb(14 165 233);
+}
+
+.icon-search {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #DED7D7;
+    font-size: small;
+}
+
+/* SearchBar -End- */
+
+
+/* LogoBar -Start- */
+
+.logo-bar__body {
+    display: flex;
+    align-items: center;
+}
+
+.logo-bar__image {
+    width: 8%;
+    margin-right: 10px;
+}
+
+.logo-bar__body p {
+    font-size: 16px;
+    font-weight: 500;
+} 
+
+/* LogoBar -End- */
+
+
+/* Navbar -Start- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+/* Navbar -End- */
+
+
+/* Main body -Start- */
+
+.main-body {
+    display: flex;
+    gap: 20px;
+    margin: 0 50px;
+}
+
+.main-body__items {
+    display: flex;
+    width: 100%;
+}
+
+/* Main body -End- */
+
+
+
+/* Create Personal Notes Form -Start- */
+
+.form-createNotes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    height: max-content;
+}
+
+.form-createNotes input {
+    padding: 8px 8px 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-createNotes input:focus {
+    outline: 1px solid #95BDFF; 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 4px #95BDFF;
+    -moz-box-shadow: 0px 0px 4px #95BDFF;
+    box-shadow: 0px 0px 4px #95BDFF; 
+}
+
+.form-createNotes input::placeholder {
+    font-size: small;
+    color: #DED7D7;
+}
+
+.form-createNotes p {
+    font-size: 12px;
+    color: #848282;
+    text-align: right;
+}
+
+.form-createNotes textarea {
+    padding: 8px 8px 8px 15px;
+    border: none;
+    border-radius: 5px;
+    height: 100px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.form-createNotes textarea:focus {
+    outline: 1px solid #95BDFF; 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 4px #95BDFF;
+    -moz-box-shadow: 0px 0px 4px #95BDFF;
+    box-shadow: 0px 0px 4px #95BDFF; 
+}
+
+.form-createNotes textarea::placeholder {
+    font-size: small;
+    color: #DED7D7;
+}
+
+.form-createNotes button {
+    padding: 8px;
+    border: none;
+    background-color: #07807B;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-createNotes button:hover {
+    background-color: #076E6A;
+}
+
+/* Create Personal Notes Form -End- */
+
+
+
+/* Active Notes Container -Start- */
+
+.activeNote-app {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    max-height: fit-content;
+    height: max-content;
+}
+
+.note-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content-item__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-item__title {
+    margin: 2px;
+    color: #635D5D;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.content-item__date {
+    margin: 2px;
+    color: #038179;
+    font-size: 14px;
+}
+
+.content-item__descriptions {
+    margin: 2px;
+    color: #848282;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.note-item__button {
+    margin-top: 10px;
+    display: flex;
+}
+
+.active-notes__delete {
+    background-color: #D3595B;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 30%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.active-notes__delete:hover {
+    background-color: #B3383A;
+}
+
+.active-notes__delete i, .active-notes__archive i {
+    margin-right: 5px;
+}
+
+.active-notes__archive {
+    background-color: #FDD244;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.active-notes__archive:hover {
+    background-color: #E8C13F;
+}
+
+/* Active Notes Container -End- */
+
+
+
+/* Archive Notes Container -Start- */
+
+.archiveNote-app {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    height: max-content;
+}
+
+.active-notes__move {
+    background-color: #7BCC74;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.active-notes__move:hover {
+    background-color: #61A95B;
+}
+
+.active-notes__move i {
+    margin-right: 5px;
+}
